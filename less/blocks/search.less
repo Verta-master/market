@@ -1,0 +1,31 @@
+.search {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid @grey;
+  overflow: hidden;
+}
+
+.search__input {
+  display: block;
+  height: 30px;
+  width: 500px;
+  padding-left: 15px;
+}
+
+.search__btn {
+  display: block;
+  width: 50px;
+  height: 30px;
+  color: @grey;
+  text-align: center;
+  font-size: 21px;
+  line-height: 1;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @yellow;
+    .transition();
+  }
+}
