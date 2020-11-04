@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="wrapper">
+        <div class="header__left">
+          <span class="header__location"><i class="fas fa-map-marker-alt"></i> Москва</span>
+          <address>Преображенская 34</address>
+          <span>Ежедневно с 09:00 до 21:00</span>
+        </div>
+        <ul class="header__menu">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Войти</a> / <a href="#">Регистрация</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="wrapper">
+        <div class="logo">
+          <img src="img/images/logo.png" alt="Logo">
+        </div>
+        <div class="header__contacts">
+          <a href="tel:+74951234567" class="header__phone">8-495-123-4567</a>
+          <a href="#" class="header__call">Заказать звонок</a>
+        </div>
+        <form action="#" class="search">
+          <input type="text" class="search__form">
+          <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="header__actions">
+          <a href="#" class="header__icon header__icon--compare">
+            <i class="fab fa-deezer"></i>
+            <div class="header__number">4</div>
+          </a>
+          <a href="#" class="header__icon header__icon--like">
+            <i class="fas fa-heart"></i>
+            <div class="header__number">10</div>
+          </a>
+          <a href="#" class="header__icon header__icon--basket">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="header__number">5</div>
+            <span class="header__price">10 499<i class="fas fa-ruble-sign"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="menu">
+    <div class="wrapper">
+      <button type="button" class="menu__top"></button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Женщинам <i class="fas fa-chevron-down"></i></a>
+          <ul class="menu__sublist">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">мужчинам <i class="fas fa-chevron-down"></i></a>
+          <ul class="menu__sublist">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">детям <i class="fas fa-chevron-down"></i></a>
+          <ul class="menu__sublist">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Красота <i class="fas fa-chevron-down"></i></a>
+          <ul class="menu__sublist">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">игры <i class="fas fa-chevron-down"></i></a>
+          <ul class="menu__sublist">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">электроника <i class="fas fa-chevron-down"></i></a>
+          <ul class="menu__sublist">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">бытовая техника <i class="fas fa-chevron-down"></i></a>
+          <ul class="menu__sublist">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">дом <i class="fas fa-chevron-down"></i></a>
+          <ul class="menu__sublist">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <section class="promo">
+      <div class="swiper-container promo__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide promo__slide">
+            <img src="img/images/banner.jpg" alt="Banner">
+          </div>
+          <div class="swiper-slide promo__slide">
+            <img src="img/images/banner.jpg" alt="Banner">
+          </div>
+          <div class="swiper-slide promo__slide">
+            <img src="img/images/banner.jpg" alt="Banner">
+          </div>
+        </div>
+        <div class="swiper-pagination promo__pagination"></div>
+        <div class="swiper-button-prev promo__prev"></div>
+        <div class="swiper-button-next promo__next"></div>
+      </div>
+    </section>
+    
+    <section class="category">
+      <div class="wrapper">
+        <div class="category__promo">
+          <a href="#" class="category__link">
+            <figure class="category__pic">
+              <img src="img/images/img-big.jpg" alt="Category">
+            </figure>
+            <div class="category__info">
+              <div class="category__slogan">лучшее<br>предложение</div>
+              <p class="category__title">Huawei<span>Mate 20 lite</span></p>
+              <div class="category__parameters">6.53" (2244x1080)<br>6/128 Gb<br>4000 мА.ч</div>
+              <div class="category__price">
+                <div class="category__oldprice">19 599<i class="fas fa-ruble-sign"></i></div>
+                <div class="category__newprice">15 999<i class="fas fa-ruble-sign"></i></div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <ul class="category__list">
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <p class="category__title"><span>Женщинам</span></p>
+              <figure class="category__img">
+                <img src="img/images/img-1.jpg" alt="Category">
+              </figure>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <p class="category__title"><span>Мужчинам</span></p>
+              <figure class="category__img">
+                <img src="img/images/img-2.jpg" alt="Category">
+              </figure>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <p class="category__title"><span>Детям</span></p>
+              <figure class="category__img">
+                <img src="img/images/img-3.jpg" alt="Category">
+              </figure>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <p class="category__title"><span>Красота</span></p>
+              <figure class="category__img">
+                <img src="img/images/img-4.jpg" alt="Category">
+              </figure>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <p class="category__title"><span>Игры</span></p>
+              <figure class="category__img">
+                <img src="img/images/img-5.jpg" alt="Category">
+              </figure>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <p class="category__title"><span>Элетроника</span></p>
+              <figure class="category__img">
+                <img src="img/images/img-6.jpg" alt="Category">
+              </figure>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <p class="category__title"><span>Бытовая техника</span></p>
+              <figure class="category__img">
+                <img src="img/images/img-7.jpg" alt="Category">
+              </figure>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <p class="category__title"><span>Для дома</span></p>
+              <figure class="category__img">
+                <img src="img/images/img-8.jpg" alt="Category">
+              </figure>
+            </a>
+          </li>
+          <li class="category__item category__item--long">
+            <a href="#" class="category__link">
+              <p class="category__title"><span>Сезонные товары</span></p>
+              <figure class="category__img">
+                <img src="img/images/img-9.jpg" alt="Category">
+              </figure>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <figure class="category__sale">
+                <img src="img/images/sale.jpg" alt="Sale">
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="banner">
+      <div class="wrapper">
+        <ul class="banner__list">
+          <li class="banner__item">
+            <a href="#" class="banner__link">
+              <figure class="banner__img">
+                <img src="img/images/banner-1.jpg" alt="Banner">
+              </figure>
+              <div class="banner__info">
+                <p class="banner__title">скидка на Велосипеды</p>
+                <p class="banner__subtitle">и аксессуары</p>
+              </div>
+            </a>
+          </li>
+          <li class="banner__item">
+            <a href="#" class="banner__link">
+              <figure class="banner__img">
+                <img src="img/images/banner-2.jpg" alt="Banner">
+              </figure>
+              <div class="banner__info">
+                <p class="banner__title">Как выбрать велосипед?</p>
+                <p class="banner__subtitle">Для города и не только</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="popular">
+      <div class="wrapper">
+        
+      </div>
+    </section>
+    
+    <section class="banner">
+      <div class="wrapper">
+        <ul class="banner__list">
+          <li class="banner__item">
+            <a href="#" class="banner__link">
+              <figure class="banner__img">
+                <img src="img/images/banner-3.jpg" alt="Banner">
+              </figure>
+              <div class="banner__text">
+                <p class="banner__action">БОНУСНАЯ ПРОГРАММА</p>
+                <p class="banner__subaction">Бонусы не сгорят!</p>
+                <span class="btn banner__btn">Подробнее</span>
+              </div>
+            </a>
+          </li>
+          <li class="banner__item">
+            <a href="#" class="banner__link">
+              <figure class="banner__img">
+                <img src="img/images/banner-4.jpg" alt="Banner">
+              </figure>
+              <div class="banner__text">
+                <p class="banner__action">Бесплатная доставка</p>
+                <span class="btn banner__btn">Подробнее</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="info">
+      <div class="wrapper">
+        <p class="title-2">Пара слов о нас</p>
+        <div class="info__center">
+          <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа систем массового участия. Не следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение направлений прогрессивного развития. С другой стороны рамки и место обучения кадров способствует подготовки и реализации модели развития. С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Таким образом сложившаяся структура организации способствует подготовки и реализации направлений прогрессивного развития.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="blog">
+      <div class="wrapper">
+        <h2 class="title-2">Блог</h2>
+        <div class="blog__wrap">
+          <div class="blog__banner">
+            <p class="blog__title">Ответы на часто<br>задаваемые вопросы</p>
+            <a href="#" class="btn blog__btn">Подробнее</a>
+          </div>
+          <ul class="blog__list">
+            <li class="blog__item blog__item--long">
+              <a href="#" class="blog__link">
+                <img src="img/images/blog-1.jpg" alt="Blog">
+                <div class="blog__title">Обзор мультиварки Redmond RMC-M800S от покупателя</div>
+              </a>
+            </li>
+            <li class="blog__item">
+              <a href="#" class="blog__link">
+                <img src="img/images/blog-2.jpg" alt="Blog">
+                <div class="blog__title">Обзор смартфонов с ёмким аккумулятором</div>
+              </a>
+            </li>
+            <li class="blog__item">
+              <a href="#" class="blog__link">
+                <img src="img/images/blog-3.jpg" alt="Blog">
+                <div class="blog__title">Новинки у Hyundai</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="map">
+      <iframe src="https://yandex.com/map-widget/v1/-/CCUAMMTs2B"></iframe>
+      <div class="map__info">
+        <p class="map__title">Наши магазины</p>
+        <p class="map__city">Москва</p>
+        <ul class="map__list">
+          <li class="map__item">
+            <b class="map__metro">м. Чкаловская</b>
+            <address class="map__address">Серебрянический пер. 9</address>
+            <a href="tel:+74951231455" class="map__link">8-495-123-14-55</a>
+          </li>
+          <li class="map__item">
+            <b class="map__metro">м. Дубровка</b>
+            <address class="map__address">Новоостаповская ул. 4к8</address>
+            <a href="tel:+74951231455" class="map__link">8-495-123-14-55</a>
+          </li>
+          <li class="map__item">
+            <b class="map__metro">м. Коптево</b>
+            <address class="map__address">Михалковская 57к1</address>
+            <a href="tel:+74951231455" class="map__link">8-495-123-14-55</a>
+          </li>
+          <li class="map__item">
+            <b class="map__metro">м. Мичуринский проспект</b>
+            <address class="map__address">Мичуринский проспект 70</address>
+            <a href="tel:+74951231455" class="map__link">8-495-123-14-55</a>
+          </li>
+          <li class="map__item">
+            <b class="map__metro">м. Южная</b>
+            <address class="map__address">1-й дорожный проезд 10</address>
+            <a href="tel:+74951231455" class="map__link">8-495-123-14-55</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="wrapper footer__wrap">
+        <div class="footer__nav">
+          <p class="footer__title">Каталог</p>
+          <ul class="footer__list">
+            <li><a href="#">Женщинам</a></li>
+            <li><a href="#">Мужчинам</a></li>
+            <li><a href="#">Детям</a></li>
+            <li><a href="#">Красота</a></li>
+            <li><a href="#">Игры</a></li>
+            <li><a href="#">Электроника</a></li>
+            <li><a href="#">Бытовая техника</a></li>
+            <li><a href="#">Дом</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <p class="footer__title">Покупателям</p>
+          <ul class="footer__list">
+            <li><a href="#">Как сделать заказ</a></li>
+            <li><a href="#">Способы оплаты</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Возврат товара</a></li>
+            <li><a href="#">Возврат денежных средств</a></li>
+            <li><a href="#">Правила продажи</a></li>
+            <li><a href="#">Публичная оферта</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <p class="footer__title">Компания</p>
+          <ul class="footer__list">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Реквизиты</a></li>
+            <li><a href="#">Пресс-центр</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Программа лояльности</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <p class="footer__title"></p>
+          <form action="#" class="subscription">
+            <input type="text" class="subscription__input" placeholder="Введите email">
+            <button class="subscription__btn"><i class="fab fa-telegram-plane"></i></button>
+          </form>
+          <p class="footer__title"></p>
+          <ul class="social">
+            <li class="social__item">
+              <a href="#" class="social__link" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" title="Twitter"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" title="VKontakte"><i class="fab fa-vimeo-square"></i></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" title="Instagram"><i class="fab fa-instagram-square"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="wrapper">
+        <p>2004-2020 © Market.ru — модный интернет-магазин одежды, обуви и аксессуаров.</p>
+        <p>Все права защищены. Доставка по всей России.</p>
+        <ul class="payment">
+          <li class="payment__item"><i class="fab fa-cc-mastercard"></i></li>
+          <li class="payment__item"><i class="fab fa-cc-paypal"></i></li>
+          <li class="payment__item"><i class="fab fa-cc-visa"></i></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  
+  <!-- Slider -->
+  <script>
+    var mySwiper = new Swiper ('.promo__slider', {
+      pagination: {
+        el: '.promo__pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.promo__next',
+        prevEl: '.promo__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+  </script>
+</body>
+</html>
