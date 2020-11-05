@@ -1,0 +1,93 @@
+.banner__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.banner__item {
+  width: 49%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  background-color: @yellow;
+  
+  &:nth-child(2n) {
+    .banner__text,
+    .banner__info {
+      right: 30px;
+      left: auto;
+    }
+  }
+}
+
+.banner__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.banner__img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+  }
+}
+
+.banner__text,
+.banner__info {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 360px;
+  height: 100%;
+  padding-top: 50px;
+  z-index: 5;
+}
+
+.banner__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.banner__subtitle {
+  margin: 0;
+  font-size: 33px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.banner__text {
+  width: 420px;
+  padding-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #555;
+}
+
+.banner__action {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.banner__subaction {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.banner__btn {
+  margin-top: auto;
+}

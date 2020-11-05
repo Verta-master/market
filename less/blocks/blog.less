@@ -1,0 +1,99 @@
+.blog {
+  margin-bottom: 60px;
+}
+
+.blog__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.blog__banner {
+  position: relative;
+  width: 49%;
+  height: 570px;
+  margin-bottom: 8px;
+  padding: 75px 50px;
+  background-image: url(../img/images/faq.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.blog__maintitle {
+  margin-top: 0;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.blog__btn {
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.blog__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 49%;
+}
+
+.blog__item {
+  width: 49%;
+  height: 281px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  
+  &--long {
+    width: 100%;
+  }
+}
+
+.blog__link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(255,255,255,0));
+  }
+  
+  &:hover,
+  &:active {
+    .blog__title {
+      color: @yellow;
+      .transition();
+    }
+  }
+}
+
+.blog__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  margin: 0;
+  padding: 20px 25px;
+  font-size: 20px;
+  color: #fff;
+  .transition();
+}
