@@ -12,15 +12,18 @@
   position: relative;
   box-sizing: border-box;
   width: 330px;
-  height: 330px;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 10px 12px;
   background-color: #fff;
   border: 1px solid rgb(220, 220, 220);
   overflow: hidden;
   
   &:hover {
-    .catalog__overlay,
+    .catalog__view,
     .catalog__btns {
       opacity: 1;
       .transition();
@@ -31,14 +34,6 @@
 .catalog__link {
   position: relative;
   display: block;
-  
-  &:hover,
-  &:active {
-    .catalog__view {
-      opacity: 1;
-      .transition();
-    }
-  }
 }
 
 .catalog__title {
@@ -162,7 +157,7 @@
 
 .catalog__btns {
   position: absolute;
-  top: 190px;
+  top: 200px;
   left: 0;
   z-index: 5;
   opacity: 0;
@@ -171,7 +166,7 @@
 
 .catalog__btn {
   width: 50px;
-  height: 35px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,16 +186,10 @@
 }
 
 .catalog__overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  padding: 0 15px;
-  padding-bottom: 5px;
-  background-color: #fff;
-  opacity: 0;
-  .transition();
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
 }
 
 .catalog__basket {
@@ -208,6 +197,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3px;
+  margin-top: auto;
 }
 
 .catalog__number {
@@ -276,4 +266,57 @@
 .catalog__next {
   right: ~"calc(50% - 750px)";
   margin-top: -30px;
+}
+
+.catalog__preview {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  li {
+    margin: 10px;
+  }
+}
+
+.catalog__rating {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 16px;
+  
+  img {
+    margin-right: 5px;
+  }
+  
+  img,
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.catalog__info {
+  .reset();
+  list-style: none;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.catalog__more {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: @blue;
+  text-align: center;
+  
+  span {
+    border-bottom: 1px dashed @blue;
+  }
+  
+  &:hover span,
+  &:active span {
+    border-bottom-color: rgba(255,255,255,0);
+  }
 }
