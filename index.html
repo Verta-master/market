@@ -51,10 +51,13 @@
           <a href="tel:+74951234567" class="header__phone">8-495-123-4567</a>
           <a href="#" class="header__call">Заказать звонок</a>
         </div>
-        <form action="#" class="search">
-          <input type="text" class="search__input">
-          <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
-        </form>
+        <div class="search">
+          <form action="#" class="search__form">
+            <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+            <input type="text" class="search__input">
+          </form>
+          <button type="button" class="search__open"><i class="fas fa-search"></i><i class="fas fa-times"></i></button>
+        </div>
         <div class="header__actions">
           <a href="#" class="header__icon header__icon--compare">
             <svg enable-background="new 0 0 499.999 499.999" height="512" viewBox="0 0 499.999 499.999" width="512" xmlns="http://www.w3.org/2000/svg">
@@ -542,16 +545,15 @@
                     <li>Частота обновления экрана 60 Гц</li>
                     <li>Мощность звука 10 Вт (2х5 Вт)</li>
                   </ul>
-                  <a href="#" class="catalog__more"><span>Подробнее</span></a>
                   <div class="catalog__basket">
                     <div class="catalog__number">
                       <button type="button" class="catalog__num catalog__num--minus">-</button>
                       <input type="text" class="catalog__value" value="1">
                       <button type="button" class="catalog__num catalog__num--plus">+</button>
                     </div>
-                    <a href="#" class="catalog__buy">Купить&nbsp;<span class="catalog__price">9 129<i class="fas fa-ruble-sign"></i></span></a>
+                    <a href="#" class="catalog__buy">Купить</a>
                   </div>
-                  <a href="#" class="catalog__click">Купить в 1 клик</a>
+                  <a href="#" class="catalog__click"><span>Купить в 1 клик</span></a>
                 </div>
               </div>
               <div class="swiper-slide catalog__slide">
@@ -582,9 +584,9 @@
                       <input type="text" class="catalog__value" value="1">
                       <button type="button" class="catalog__num catalog__num--plus">+</button>
                     </div>
-                    <a href="#" class="catalog__buy">Купить&nbsp;<span class="catalog__price">9 129<i class="fas fa-ruble-sign"></i></span></a>
+                    <a href="#" class="catalog__buy">Купить</a>
                   </div>
-                  <a href="#" class="catalog__click">Купить в 1 клик</a>
+                  <a href="#" class="catalog__click"><span>Купить в 1 клик</span></a>
                 </div>
               </div>
               <div class="swiper-slide catalog__slide">
@@ -615,9 +617,9 @@
                       <input type="text" class="catalog__value" value="1">
                       <button type="button" class="catalog__num catalog__num--plus">+</button>
                     </div>
-                    <a href="#" class="catalog__buy">Купить&nbsp;<span class="catalog__price">9 129<i class="fas fa-ruble-sign"></i></span></a>
+                    <a href="#" class="catalog__buy">Купить</a>
                   </div>
-                  <a href="#" class="catalog__click">Купить в 1 клик</a>
+                  <a href="#" class="catalog__click"><span>Купить в 1 клик</span></a>
                 </div>
               </div>
               <div class="swiper-slide catalog__slide">
@@ -648,9 +650,9 @@
                       <input type="text" class="catalog__value" value="1">
                       <button type="button" class="catalog__num catalog__num--plus">+</button>
                     </div>
-                    <a href="#" class="catalog__buy">Купить&nbsp;<span class="catalog__price">9 129<i class="fas fa-ruble-sign"></i></span></a>
+                    <a href="#" class="catalog__buy">Купить</a>
                   </div>
-                  <a href="#" class="catalog__click">Купить в 1 клик</a>
+                  <a href="#" class="catalog__click"><span>Купить в 1 клик</span></a>
                 </div>
               </div>
               <div class="swiper-slide catalog__slide">
@@ -681,9 +683,9 @@
                       <input type="text" class="catalog__value" value="1">
                       <button type="button" class="catalog__num catalog__num--plus">+</button>
                     </div>
-                    <a href="#" class="catalog__buy">Купить&nbsp;<span class="catalog__price">9 129<i class="fas fa-ruble-sign"></i></span></a>
+                    <a href="#" class="catalog__buy">Купить</a>
                   </div>
-                  <a href="#" class="catalog__click">Купить в 1 клик</a>
+                  <a href="#" class="catalog__click"><span>Купить в 1 клик</span></a>
                 </div>
               </div>
               <div class="swiper-slide catalog__slide">
@@ -714,9 +716,9 @@
                       <input type="text" class="catalog__value" value="1">
                       <button type="button" class="catalog__num catalog__num--plus">+</button>
                     </div>
-                    <a href="#" class="catalog__buy">Купить&nbsp;<span class="catalog__price">9 129<i class="fas fa-ruble-sign"></i></span></a>
+                    <a href="#" class="catalog__buy">Купить</a>
                   </div>
-                  <a href="#" class="catalog__click">Купить в 1 клик</a>
+                  <a href="#" class="catalog__click"><span>Купить в 1 клик</span></a>
                 </div>
               </div>
               <div class="swiper-slide catalog__slide">
@@ -747,9 +749,9 @@
                       <input type="text" class="catalog__value" value="1">
                       <button type="button" class="catalog__num catalog__num--plus">+</button>
                     </div>
-                    <a href="#" class="catalog__buy">Купить&nbsp;<span class="catalog__price">9 129<i class="fas fa-ruble-sign"></i></span></a>
+                    <a href="#" class="catalog__buy">Купить</a>
                   </div>
-                  <a href="#" class="catalog__click">Купить в 1 клик</a>
+                  <a href="#" class="catalog__click"><span>Купить в 1 клик</span></a>
                 </div>
               </div>
             </div>
@@ -853,16 +855,15 @@
                       <li>Частота обновления экрана 60 Гц</li>
                       <li>Мощность звука 10 Вт (2х5 Вт)</li>
                     </ul>
-                    <a href="#" class="catalog__more"><span>Подробнее</span></a>
                     <div class="catalog__basket">
                       <div class="catalog__number">
                         <button type="button" class="catalog__num catalog__num--minus">-</button>
                         <input type="text" class="catalog__value" value="1">
                         <button type="button" class="catalog__num catalog__num--plus">+</button>
                       </div>
-                      <a href="#" class="catalog__buy">Купить&nbsp;<span class="catalog__price">9 129<i class="fas fa-ruble-sign"></i></span></a>
+                      <a href="#" class="catalog__buy">Купить</a>
                     </div>
-                    <a href="#" class="catalog__click">Купить в 1 клик</a>
+                    <a href="#" class="catalog__click"><span>Купить в 1 клик</span></a>
                   </div>
                 </div>
                 <div class="swiper-slide catalog__slide">
@@ -893,9 +894,9 @@
                         <input type="text" class="catalog__value" value="1">
                         <button type="button" class="catalog__num catalog__num--plus">+</button>
                       </div>
-                      <a href="#" class="catalog__buy">Купить&nbsp;<span class="catalog__price">9 129<i class="fas fa-ruble-sign"></i></span></a>
+                      <a href="#" class="catalog__buy">Купить</a>
                     </div>
-                    <a href="#" class="catalog__click">Купить в 1 клик</a>
+                    <a href="#" class="catalog__click"><span>Купить в 1 клик</span></a>
                   </div>
                 </div>
                 <div class="swiper-slide catalog__slide">
@@ -926,9 +927,9 @@
                         <input type="text" class="catalog__value" value="1">
                         <button type="button" class="catalog__num catalog__num--plus">+</button>
                       </div>
-                      <a href="#" class="catalog__buy">Купить&nbsp;<span class="catalog__price">9 129<i class="fas fa-ruble-sign"></i></span></a>
+                      <a href="#" class="catalog__buy">Купить</a>
                     </div>
-                    <a href="#" class="catalog__click">Купить в 1 клик</a>
+                    <a href="#" class="catalog__click"><span>Купить в 1 клик</span></a>
                   </div>
                 </div>
                 <div class="swiper-slide catalog__slide">
@@ -959,9 +960,9 @@
                         <input type="text" class="catalog__value" value="1">
                         <button type="button" class="catalog__num catalog__num--plus">+</button>
                       </div>
-                      <a href="#" class="catalog__buy">Купить&nbsp;<span class="catalog__price">9 129<i class="fas fa-ruble-sign"></i></span></a>
+                      <a href="#" class="catalog__buy">Купить</a>
                     </div>
-                    <a href="#" class="catalog__click">Купить в 1 клик</a>
+                    <a href="#" class="catalog__click"><span>Купить в 1 клик</span></a>
                   </div>
                 </div>
                 <div class="swiper-slide catalog__slide">
@@ -992,9 +993,9 @@
                         <input type="text" class="catalog__value" value="1">
                         <button type="button" class="catalog__num catalog__num--plus">+</button>
                       </div>
-                      <a href="#" class="catalog__buy">Купить&nbsp;<span class="catalog__price">9 129<i class="fas fa-ruble-sign"></i></span></a>
+                      <a href="#" class="catalog__buy">Купить</a>
                     </div>
-                    <a href="#" class="catalog__click">Купить в 1 клик</a>
+                    <a href="#" class="catalog__click"><span>Купить в 1 клик</span></a>
                   </div>
                 </div>
               </div>
@@ -1174,6 +1175,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
   
   <!-- Sliders -->
   <script>
@@ -1197,11 +1199,18 @@
         prevEl: '.catalog__prev--01',
       },
       slidesPerView: 4,
-//      slidesPerColumn: 2,
       simulateTouch: false,
       preventClicks: false,
       preventClicksPropagation: false,
       spaceBetween: 20,
+      breakpoints: {
+        1200: {
+          slidesPerView: 3,
+        },
+        766: {
+          slidesPerView: 2,
+        }
+      }
     });
     
     var mySwiper3 = new Swiper ('.catalog__slider--02', {
@@ -1210,11 +1219,18 @@
         prevEl: '.catalog__prev--02',
       },
       slidesPerView: 4,
-//      slidesPerColumn: 2,
       simulateTouch: false,
       preventClicks: false,
       preventClicksPropagation: false,
       spaceBetween: 20,
+      breakpoints: {
+        1200: {
+          slidesPerView: 3,
+        },
+        766: {
+          slidesPerView: 2,
+        }
+      }
     });
   </script>
   
