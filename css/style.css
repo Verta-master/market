@@ -461,6 +461,7 @@ h1,
 }
 h2,
 .title-2 {
+  margin-bottom: 35px;
   font-size: 30px;
   font-weight: 700;
 }
@@ -498,8 +499,8 @@ h3 {
   text-decoration: underline;
 }
 .header__top {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 13px;
   letter-spacing: 0.06em;
   background-color: #dcdcdc;
@@ -550,7 +551,7 @@ h3 {
   text-decoration: underline;
 }
 .header__bottom {
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 20px;
 }
 .header__phone {
@@ -590,6 +591,8 @@ h3 {
   margin-left: 30px;
 }
 .header__icon svg {
+  display: inline-block;
+  vertical-align: middle;
   width: 25px;
   height: 25px;
   fill: #333;
@@ -623,15 +626,21 @@ h3 {
   background-color: #ffd900;
 }
 .header__price {
+  display: inline-block;
+  vertical-align: middle;
   margin-left: 10px;
   font-size: 25px;
   font-weight: 700;
+  letter-spacing: -0.05em;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
 .header__price i {
   margin-left: 10px;
   font-size: 16px;
+}
+.header__contacts {
+  margin-left: 30px;
 }
 .search {
   display: -webkit-box;
@@ -759,9 +768,10 @@ h3 {
 }
 .menu__link {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-transform: uppercase;
+  font-size: 18px;
 }
 .menu__link i {
   margin-left: 5px;
@@ -796,10 +806,14 @@ h3 {
   position: relative;
 }
 .menu__subitem {
+  position: relative;
   margin-bottom: 20px;
 }
 .menu__subitem:last-child {
   margin-bottom: 0;
+}
+.menu__subitem:hover .menu__sub {
+  display: block;
 }
 .menu__sublink {
   display: block;
@@ -809,13 +823,20 @@ h3 {
 .menu__sublink i {
   margin-left: 10px;
 }
+.menu__sublink:hover,
+.menu__sublink:active {
+  text-decoration: underline;
+}
 .menu__sub {
+  display: none;
   position: absolute;
   top: 0;
   left: 100%;
   width: 210px;
+  padding: 0 10px;
   color: #777;
   font-size: 16px;
+  background-color: #fff;
 }
 .menu__sub li {
   margin-bottom: 10px;
@@ -828,7 +849,7 @@ h3 {
   text-decoration: underline;
 }
 .promo {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 .promo__slide {
   -webkit-box-sizing: border-box;
@@ -862,7 +883,7 @@ h3 {
   background-color: #333;
 }
 .category {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .category__promo {
   width: 500px;
@@ -900,15 +921,22 @@ h3 {
   left: 0;
   right: 0;
   z-index: 5;
+  padding: 10px 40px;
 }
 .category__slogan {
+  margin-bottom: 80px;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ff0000;
   letter-spacing: 0.2em;
 }
+.category__name {
+  padding-left: 30px;
+  margin-bottom: 50px;
+}
 .category__maintitle {
+  margin-bottom: 45px;
   font-size: 30px;
   font-weight: 700;
   color: #333;
@@ -917,7 +945,9 @@ h3 {
 }
 .category__maintitle span {
   display: block;
+  margin-top: 18px;
   font-size: 20px;
+  text-transform: none;
 }
 .category__parameters {
   color: #a09f9f;
@@ -936,6 +966,7 @@ h3 {
   margin-right: 40px;
   font-size: 30px;
   color: #333;
+  font-weight: 500;
 }
 .category__oldprice i {
   margin-left: 5px;
@@ -944,7 +975,7 @@ h3 {
 .category__newprice {
   padding: 0 15px;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
   background-color: #ff0000;
 }
@@ -1049,13 +1080,14 @@ h3 {
 }
 .banner__item {
   width: 49%;
+  height: 350px;
   margin-bottom: 30px;
   overflow: hidden;
   background-color: #ffd900;
 }
 .banner__item:nth-child(2n) .banner__text,
 .banner__item:nth-child(2n) .banner__info {
-  right: 30px;
+  right: 5px;
   left: auto;
 }
 .banner__link {
@@ -1090,24 +1122,27 @@ h3 {
   padding-top: 50px;
   z-index: 5;
 }
+.banner__info {
+  padding-top: 45px;
+}
 .banner__title {
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 33px;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 .banner__subtitle {
   margin: 0;
   font-size: 33px;
   font-weight: 300;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 .banner__text {
   width: 420px;
-  padding-bottom: 65px;
+  padding-bottom: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1153,13 +1188,14 @@ h3 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-top: 50px;
 }
 .blog__banner {
   position: relative;
   width: 49%;
   height: 570px;
   margin-bottom: 8px;
-  padding: 75px 50px;
+  padding: 70px 50px;
   background-image: url(../img/images/faq.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1176,6 +1212,8 @@ h3 {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  width: 280px;
+  height: 60px;
 }
 .blog__list {
   margin: 0;
@@ -1267,15 +1305,15 @@ h3 {
   position: absolute;
   z-index: 5;
   top: 50px;
-  left: 50%;
+  left: 55.5%;
   width: 492px;
-  padding: 50px 60px;
+  padding: 40px 60px;
   background-color: rgba(248, 248, 248, 0.75);
 }
 .map__title {
   margin-top: 0;
   margin-bottom: 45px;
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 700;
 }
 .map__city {
@@ -1286,9 +1324,10 @@ h3 {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-left: 20px;
 }
 .map__item {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 18px;
 }
 .map__item:last-child {
@@ -1312,6 +1351,7 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 40px;
+  padding-bottom: 5px;
 }
 .footer__bottom {
   padding-top: 20px;
@@ -1336,7 +1376,7 @@ h3 {
   list-style: none;
 }
 .footer__list li {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-size: 18px;
 }
 .footer__list a:hover,
@@ -1790,6 +1830,10 @@ h3 {
 .catalog__more:active span {
   border-bottom-color: rgba(255, 255, 255, 0);
 }
+.tabs {
+  padding-top: 30px;
+  margin-bottom: 70px;
+}
 .tabs__title {
   margin: 0;
   padding: 0;
@@ -1818,7 +1862,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .tabs__name {
   position: relative;
