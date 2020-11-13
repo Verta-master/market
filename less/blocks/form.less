@@ -1,0 +1,126 @@
+.form {
+  color: #555;
+  font-size: 16px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form__field {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  
+  i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 5;
+  }
+}
+
+.form__message,
+.form__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 13px;
+  border: 1px solid rgb(208, 208, 208);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  
+  &::placeholder {
+    color: #999;
+    opacity: 1;
+    font-style: italic;
+  }
+}
+
+.form__input {
+  height: 40px;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+.form__message {
+  height: 90px;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.form__checkbox {
+  display: none;
+}
+
+.form__checklabel {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    color: #333;
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.form__checkbox:checked + .form__checklabel::before {
+  content: "\2713";
+}
+
+.form__comment {
+  font-size: 13px;
+  color: #999;
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  a:hover,
+  a:active {
+    text-decoration: none;
+  }
+}
+
+.form__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form__btn {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 5px;
+  background-color: @yellow;
+  .transition();
+  
+  i {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  
+  &:hover,
+  &:active {
+    background-color: @hover;
+    .transition();
+  }
+}

@@ -49,7 +49,7 @@
         </div>
         <div class="header__contacts">
           <a href="tel:+74951234567" class="header__phone">8-495-123-4567</a>
-          <a href="#" class="header__call">Заказать звонок</a>
+          <a data-fancybox data-src="#call" href="javascript:;" class="header__call">Заказать звонок</a>
         </div>
         <div class="search">
           <form action="#" class="search__form">
@@ -1172,6 +1172,38 @@
       </div>
     </div>
   </footer>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="call" class="modal">
+    <div class="modal__title"><span>Свяжитесь со мной!</span></div>
+    <div class="modal__body">
+      <form action="#" class="form">
+        <label for="name" class="form__label">Данные для обатной связи:</label>
+        <div class="form__field">
+          <i class="fas fa-user-alt"></i>
+          <input type="text" id="name" class="form__input" placeholder="Как к вам обращаться? *">
+        </div>
+        <div class="form__field">
+          <i class="fas fa-phone-alt"></i>
+          <input type="tel" id="phone" class="form__input" placeholder="+ 7 - _ _ _ - _ _ _ - _ _ - _ _ *">
+        </div>
+        <label for="message" class="form__label">Комметарий:</label>
+        <div class="form__field">
+          <i class="fas fa-pen"></i>
+          <textarea id="message" class="form__message" placeholder="Введите текст"></textarea>
+        </div>
+        <div class="form__btns">
+          <div class="form__check">
+            <input type="checkbox" id="checkbox" class="form__checkbox">
+            <label for="checkbox" class="form__checklabel">Я не робот</label>
+            <div class="form__comment">* Поля, обязательные для заполнения</div>
+          </div>
+          <button type="submit" class="form__btn">Отправить <i class="fab fa-telegram-plane"></i></button>
+        </div>
+        <div class="form__comment">Отправляя форму, я даю согласие на обработку персональных данных. Соглашаюсь с <a href="#">политикой конфиденциальности</a> google и с уловиями предоставления услуг сервисов google.</div>
+      </form>
+    </div>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
